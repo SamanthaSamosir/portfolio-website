@@ -1,0 +1,183 @@
+body {
+    font-family: "Lora", sans-serif;
+    background-color: #16001e;
+    color: #f7b2b7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 0 100px; /* Add padding to make the content narrower */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Ensure padding doesn’t affect container size */
+
+}
+
+.left-section {
+    position: fixed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start, closer to the left */
+    padding-right: 50px; /* Adds space between the sections */
+    padding-bottom:15px;
+}
+
+.left-section h1 {
+    font-size: 2.6rem;
+    color: #f7b2b7;
+    margin: 0;
+
+    font-family: "Lora", serif;
+    font-weight: 900;
+}
+
+.left-section h2 {
+    font-size: 1.2rem;
+    color: #f7b2b7;
+    margin: 10px 0;
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.left-section p {
+    font-size: 1rem;
+    color: #f7b2b7;
+    margin-bottom: 50px;
+}
+nav{
+    padding-bottom:30px;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+nav ul li::before {
+    content: '';
+    display: inline-block;
+    width: 30px; /* Shorter line by default */
+    height: 1.4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 15px;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li:hover::before {
+    width: 50px; /* Longer line on hover */
+    height: 1.4px;
+}
+
+nav ul li.active::before {
+    width: 70px; /* Line stays longer when clicked */
+    background-color: #f7b2b7; /* Highlight the line for active state */
+    height: 1.4px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover a {
+    color: #f7717d; /* Text color on hover */
+}
+
+nav ul li.active a {
+    color: #f7b2b7; /* Text color when clicked */
+}
+.icon-bg {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20%; /* Make the background circular */
+    padding: 5px; /* Add padding inside the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-bg:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+.social-icons {
+    margin-top: 20px; /* Add space between social icons and navigation */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #8892b0;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #64ffda;
+}
+
+.right-section {
+    flex: 1.2;
+    display: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding-left: 130px; /* Adds space between the sections */
+}
+
+.about {
+    line-height: 1.6em;
+    margin-top:1000px;
+    padding-top:740px;
+    text-align:justify;
+}
+.experience{
+   margin-bottom:100px;
+   /*padding-top: 100px;*/
+}
+.experience-content{
+    padding-bottom:10px;
+
+}
+section{
+    padding-top: 80px;
+    margin-top:200px;
+    margin-bottom:30px;
+}
+.underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust the spacing below the line */
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 107%; /* Full width line */
+    height: 1px;  /* Line thickness */
+    background-color: #f7b2b7; /* Line color */
+    margin-top: 5px; /* Spacing between the text and line */
+}
+

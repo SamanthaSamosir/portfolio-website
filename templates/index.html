@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Meliora - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Google Fonts Import -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Samantha Samosir</h1>
+            <h2>Adventurous Coder & Space Enthusiast</h2>
+            <p>I code with purpose to build innovative solutions,<br> inspire minds, pave the
+                way for future generations,<br> and promote free accessible learning for all.</p>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#stories">Stories</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <!-- Add social media icons/links here -->
+                <a href="https://github.com/SamanthaSamosir" target="_blank">
+                    <img class ="icon-bg" src="{{ url_for('static', filename='images/github.webp') }}" alt="GitHub" style="width: 20px; height: 20px;">
+                </a>
+                <a href="https://www.linkedin.com/in/samanthameliorasamosir/" target="_blank">
+                    <img src="{{ url_for('static', filename='images/linkedin.webp') }}" alt="Linkedin" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.instagram.com/samanthameliora/" target="_blank">
+                    <img src="{{ url_for('static', filename='images/instagram.webp') }}" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <section id="about">
+                <p class="about">
+                    In 2018, I chose to study IT, driven by my passion for solving puzzles and understanding technology. My curiosity about diverse tech environments led me to explore various industries, such as pharmaceuticals, telemedicine, and business, and take on roles like full-stack developer, QA automation specialist, and DevOps engineer.
+                    <br><br>Volunteering with children at Yayasan Kasih Anak Kanker Indonesia (YKAKI) and orphanages, teaching programming or English, sparked my love for education. After graduating, I continued this passion by teaching kids programming, while also challenging myself as a QA Analyst.
+                    <br><br>Currently, I’m diving into cybersecurity, driven by concerns about Indonesia's digital safety. I'm part of the Digital Talent Scholarship by Kominfo and seeking scholarships for a master’s in cybersecurity. My goal is to become an expert, offer local training, and launch "Melek," a startup focused on research and solutions. I aspire to collaborate with KOMINFO and BRIN to enhance Indonesia’s cybersecurity.
+                </p>
+            </section>
+             <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <h2 class="underline">Experiences</h2>
+                <div class="experience-content">
+                    <h4>PT. Bank Tabungan Negara</h4>
+                    <p><strong>Role:</strong> QA Engineer (2021-Present)</p>
+                    <p><strong>Achievements:</strong> Built scalable testing frameworks and ensured high-quality standards across multiple platforms.</p>
+                </div>
+                <div class="experience-content">
+                    <h4>Freelance Development</h4>
+                    <p><strong>Role:</strong> Front-end Developer (2019-2021)</p>
+                    <p><strong>Achievements:</strong> Created user-friendly, responsive websites for various clients, focusing on aesthetics and functionality.</p>
+                </div>
+                <div class="experience-content">
+                    <h4>PT. Bank Tabungan Negara</h4>
+                    <p><strong>Role:</strong> QA Engineer (2021-Present)</p>
+                    <p><strong>Achievements:</strong> Built scalable testing frameworks and ensured high-quality standards across multiple platforms.</p>
+                </div>
+                <div class="experience-content">
+                    <h4>Freelance Development</h4>
+                    <p><strong>Role:</strong> Front-end Developer (2019-2021)</p>
+                    <p><strong>Achievements:</strong> Created user-friendly, responsive websites for various clients, focusing on aesthetics and functionality.</p>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2 class="underline">Projects</h2>
+                <div class="experience-content">
+                    <h4>PT. Bank Tabungan Negara</h4>
+                    <p><strong>Role:</strong> QA Engineer (2021-Present)</p>
+                    <p><strong>Achievements:</strong> Built scalable testing frameworks and ensured high-quality standards across multiple platforms.</p>
+                </div>
+                <div class="experience-content">
+                    <h3>Freelance Development</h3>
+                    <p><strong>Role:</strong> Front-end Developer (2019-2021)</p>
+                    <p><strong>Achievements:</strong> Created user-friendly, responsive websites for various clients, focusing on aesthetics and functionality.</p>
+                </div>
+                <div class="experience-content">
+                    <h3>PT. Bank Tabungan Negara</h3>
+                    <p><strong>Role:</strong> QA Engineer (2021-Present)</p>
+                    <p><strong>Achievements:</strong> Built scalable testing frameworks and ensured high-quality standards across multiple platforms.</p>
+                </div>
+                <div class="experience-content">
+                    <h3>Freelance Development</h3>
+                    <p><strong>Role:</strong> Front-end Developer (2019-2021)</p>
+                    <p><strong>Achievements:</strong> Created user-friendly, responsive websites for various clients, focusing on aesthetics and functionality.</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
