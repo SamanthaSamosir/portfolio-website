@@ -145,6 +145,8 @@ nav ul li.active a {
     margin-top: 100px;
     margin-left: 400px;
     padding-left: 130px; /* Adds space between the sections */
+    min-height: 100vh;
+    min-height: 100vh;
 }
 
 .about {
