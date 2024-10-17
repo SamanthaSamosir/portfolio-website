@@ -14,5 +14,6 @@
   ],
   "redirects": [
     { "source": "http://samanthasamosir.com", "destination": "https://samanthasamosir.com", "permanent": true }
-  ]
+  ],
+  "cleanUrls": true
 }
