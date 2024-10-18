@@ -2,9 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav ul li a');
 
-    let currentSection = '';
+    // Force scroll to #about on page load, ignoring any hash in the URL
+    function scrollToAboutSection() {
+        const aboutSection = document.querySelector('#about');
+        const sectionTop = aboutSection.offsetTop;
 
-    // Smooth scrolling function
+        window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+        });
+
+        // Update the URL hash to #about
+        window.history.pushState(null, '', '#about');
+    }
+
+    // Smooth scrolling for nav links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default anchor behavior
@@ -15,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: sectionTop, // Scroll to the top of the section
                 behavior: 'smooth' // Smooth scroll animation
             });
+
+            // Update the URL hash without jumping
+            window.history.pushState(null, '', this.getAttribute('href'));
         });
     });
 
@@ -38,4 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Force the scroll to top or about section on page load
+    scrollToAboutSection();
 });

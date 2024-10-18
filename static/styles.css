@@ -142,7 +142,7 @@ nav ul li.active a {
     display: flex-start;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 3000px;
     margin-left: 400px;
     padding-left: 130px; /* Adds space between the sections */
     min-height: 100vh;
@@ -151,8 +151,8 @@ nav ul li.active a {
 
 .about {
     line-height: 1.6em;
-    margin-top:1000px;
-    padding-top:740px;
+    margin-top:100px;
+    padding-top:300px;
     text-align:justify;
 }
 .experience{
@@ -161,7 +161,13 @@ nav ul li.active a {
 }
 .experience-content{
     padding-bottom:10px;
-
+}
+.experience-content li{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.certifications-content{
+    padding-bottom:5px;
 }
 section{
     padding-top: 80px;
@@ -182,4 +188,25 @@ section{
     background-color: #f7b2b7; /* Line color */
     margin-top: 5px; /* Spacing between the text and line */
 }
+.link {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    position: relative; /* Positioning for the arrow */
+}
+.arrow {
+    visibility: hidden; /* Hide the arrow by default */
+    position: absolute; /* Absolute positioning */
+    right: -20px; /* Position to the right of the text */
+    top: -5px; /* Adjust vertical position */
+    transition: visibility 0.3s, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Fully transparent */
+}
 
+.link:hover {
+    color: #f7717d; /* Change to your desired hover color */
+}
+.link:hover .arrow {
+    visibility: visible; /* Show the arrow on hover */
+    opacity: 1; /* Make the arrow fully visible */
+}
