@@ -16,10 +16,22 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.pushState(null, '', '#about');
     }
 
-    // Smooth scrolling for nav links
+    // Function to update active nav link immediately
+    function setActiveNavLink(link) {
+        navLinks.forEach(navLink => {
+            navLink.parentElement.classList.remove('active');
+        });
+        link.parentElement.classList.add('active');
+    }
+
+    // Smooth scrolling for nav links with active state update
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default anchor behavior
+
+            // Set the active nav link before scrolling
+            setActiveNavLink(this);
+
             const targetSection = document.querySelector(this.getAttribute('href'));
             const sectionTop = targetSection.offsetTop;
 
