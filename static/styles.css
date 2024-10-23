@@ -48,7 +48,7 @@ body {
 .left-section p {
     font-size: 1rem;
     color: #f7b2b7;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 nav{
     padding-bottom:30px;
@@ -142,17 +142,15 @@ nav ul li.active a {
     display: flex-start;
     justify-content: center;
     align-items: center;
-    margin-top: 3000px;
+    margin-top: 4000px;
     margin-left: 400px;
     padding-left: 130px; /* Adds space between the sections */
-    min-height: 100vh;
-    min-height: 100vh;
 }
 
 .about {
     line-height: 1.6em;
-    margin-top:100px;
-    padding-top:300px;
+    margin-top:10px;
+    padding-top:280px;
     text-align:justify;
 }
 .experience{
@@ -167,10 +165,10 @@ nav ul li.active a {
     line-height: 1.6em;
 }
 .certifications-content{
-    padding-bottom:5px;
+    padding-bottom:10px;
 }
 section{
-    padding-top: 70px;
+    padding-top: 90px;
     margin-top:200px;
     margin-bottom:30px;
 }
@@ -209,4 +207,11 @@ section{
 .link:hover .arrow {
     visibility: visible; /* Show the arrow on hover */
     opacity: 1; /* Make the arrow fully visible */
+}
+.education-content{
+    padding-bottom:10px;
+}
+.education-content li{
+    font-size: 14px;
+    line-height: 1.6em;
 }
