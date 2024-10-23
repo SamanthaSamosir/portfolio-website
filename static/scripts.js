@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            if (window.pageYOffset >= sectionTop - sectionHeight / 2) {
+            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
                 currentSection = section.getAttribute('id');
             }
         });
