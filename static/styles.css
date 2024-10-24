@@ -142,15 +142,15 @@ nav ul li.active a {
     display: flex-start;
     justify-content: center;
     align-items: center;
-    margin-top: 4000px;
+    margin-top: 3000px;
     margin-left: 400px;
     padding-left: 130px; /* Adds space between the sections */
 }
 
 .about {
     line-height: 1.6em;
-    margin-top:10px;
-    padding-top:280px;
+    margin-top:900px;
+    padding-top:250px;
     text-align:justify;
 }
 .experience{
