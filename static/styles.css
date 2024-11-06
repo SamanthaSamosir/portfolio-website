@@ -1,20 +1,18 @@
 body {
     font-family: "Lora", sans-serif;
     background-color: #16001e;
-    color: #f7b2b7;
+    color: #f7b2b7; /* warna text */
     margin: 0;
     padding: 0;
 }
-
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; /* Center vertically */
     padding: 0 100px; /* Add padding to make the content narrower */
-    height: 100vh; /* Full viewport height */
+    height: 100vh; /* Full viewport height. Satuan: px, rem, vh*/
     box-sizing: border-box; /* Ensure padding doesn’t affect container size */
-
 }
 
 .left-section {
@@ -32,11 +30,9 @@ body {
     font-size: 2.6rem;
     color: #f7b2b7;
     margin: 0;
-
     font-family: "Lora", serif;
     font-weight: 900;
 }
-
 .left-section h2 {
     font-size: 1.2rem;
     color: #f7b2b7;
@@ -44,7 +40,6 @@ body {
     font-family: "Lora", serif;
     font-weight: 400;
 }
-
 .left-section p {
     font-size: 1rem;
     color: #f7b2b7;
@@ -59,7 +54,6 @@ nav ul li {
     font-size: 1.1rem;
     font-weight: 600;
 }
-
 nav ul li::before {
     content: '';
     display: inline-block;
@@ -69,28 +63,23 @@ nav ul li::before {
     margin-right: 15px;
     transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
-
 nav ul li:hover::before {
     width: 50px; /* Longer line on hover */
     height: 1.4px;
 }
-
 nav ul li.active::before {
     width: 70px; /* Line stays longer when clicked */
     background-color: #f7b2b7; /* Highlight the line for active state */
     height: 1.4px;
 }
-
 nav ul li a {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 nav ul li:hover a {
     color: #f7717d; /* Text color on hover */
 }
-
 nav ul li.active a {
     color: #f7b2b7; /* Text color when clicked */
 }
@@ -177,7 +166,6 @@ section{
     display: inline-block;
     margin-bottom: 10px; /* Adjust the spacing below the line */
 }
-
 .underline::after {
     content: '';
     display: block;
